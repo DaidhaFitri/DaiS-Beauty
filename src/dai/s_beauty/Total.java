@@ -23,9 +23,6 @@ public class Total implements Initializable {
     @FXML
     private TextArea TA;
 
-    /**
-     * Initializes the controller class.
-     */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -35,9 +32,11 @@ public class Total implements Initializable {
          TA.setText("Anda Harus Membayar : "+taideal);
      }
 
-      public void myFunction1(Integer ta, String Nama,String Tempat,String Alamat,String Keluhan ,Integer Umur , LocalDate Tanggal){
+      public void myFunction1(Integer ta, String Nama,String Tempat,
+              String Alamat,String Keluhan ,Integer Umur , LocalDate Tanggal){
     
-         TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "+Tanggal+"\nUmur : "+Umur+"Alamat : "+Alamat+"\nKeluhan : "+Keluhan+
+         TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "
+                 +Tanggal+"\nUmur : "+Umur+"Alamat : "+Alamat+"\nKeluhan : "+Keluhan+
                  "\nAnda Harus Membayar : "+ta);
      }
     
@@ -49,13 +48,17 @@ public class Total implements Initializable {
         TA.setText("Anda Harus Membayar : "+totalbayar);
     }
 
-    void myFunction1(Integer ta, String Nama, String Tempat, String Alamat, String Keluhan, int Umur, LocalDate Tanggal, int biaya) {
-        TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "+Tanggal+"\nUmur : "+Umur+"Alamat : "+Alamat+"\nKeluhan : "+Keluhan+
+    void myFunction1(Integer ta, String Nama, String Tempat, String Alamat,
+            String Keluhan, int Umur, LocalDate Tanggal, int biaya) {
+        TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "
+                +Tanggal+"\nUmur : "+Umur+"Alamat : "+Alamat+"\nKeluhan : "+Keluhan+
                  "\nAnda Harus Membayar : "+biaya);
     }
 
-    void myFunction1(String Nama, String Tempat, String Alamat, String Keluhan, int Umur, LocalDate Tanggal, int biaya) {
-       TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "+Tanggal+"\nUmur : "+Umur+"\nAlamat : "+Alamat+"\nKeluhan : "+Keluhan+
+    void myFunction1(String Nama, String Tempat, String Alamat, String Keluhan,
+            int Umur, LocalDate Tanggal, int biaya) {
+       TA.setText("Nama : "+Nama+"\nTempat Lahir : "+Tempat+"\nTanggal Lahir : "
+               +Tanggal+"\nUmur : "+Umur+"\nAlamat : "+Alamat+"\nKeluhan : "+Keluhan+
                  "\nAnda Harus Membayar : "+biaya);
     }
 }

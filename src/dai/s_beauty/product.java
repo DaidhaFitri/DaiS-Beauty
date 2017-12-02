@@ -55,12 +55,12 @@ public class product implements Initializable {
    int total,totalbayar,jumlah;
    int total1,total2,total3,total4,total5,total6,total7,total8,total9,total10;
    int harga1,harga2,harga3,harga4,harga5,harga6,harga7,harga8,harga9,harga10;
-   String barang1,barang2,barang3,barang4,barang5,barang6,barang7,barang8,barang9,barang10;
+   String barang1,barang2,barang3,barang4,barang5,barang6,barang7,barang8,barang9,
+   barang10;
    String TampilTotalBayar;
    String barang="";
-    /**
-     * Initializes the controller class.
-     */
+     
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
@@ -149,7 +149,8 @@ public class product implements Initializable {
             total10=harga10;
             System.out.println(total10);
          }
-        totalbayar = total1+total2+total3+total4+total5+total6+total7+total8+total9+total10;
+        totalbayar = total1+total2+total3+total4+total5+total6+total7+total8+
+                total9+total10;
         
         
         ((Node) (event.getSource())).getScene().getWindow().hide();
